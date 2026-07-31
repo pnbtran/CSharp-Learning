@@ -5,7 +5,23 @@
 
 - Thuật toán **Bubble Sort**
 
-- Đổi chỗ 2 phần tử (bằng biến tạm)
+- Đổi chỗ 2 phần tử (bằng biến tạm). **Lý do**?
+```txt
+Giả sử:
+A = 5
+B = 8
+
+Nếu viết
+A = B;
+B = A;
+
+Ta có, KQ như sau: 
+A = 8
+B = 8
+Giá trị 5 đã mất.
+
+=> Cần biến trung gian temp để giữ giá trị cũ.
+```
 
 - Phương thức `PrintArray` để in mảng gọn hơn
 
