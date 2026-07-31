@@ -178,7 +178,8 @@ Program
 ## Lưu ý
 - Hạn chế của chương trình: kích thước mảng đang là cố định (`CapacityStudent = 100`), nếu xóa phần tử ở giữa phải đồn mảng thủ công --> mất thời gian nếu mảng có nhiều giá trị. 
 
-- **Hiểu lầm đã dính** 
+- **Hiểu lầm đã dính**
+
 | Sai | Đúng |
 |-----|------|
 | `switch` không cần `break` mỗi `case` | Bắt buộc `break` -> thiếu là lỗi |
