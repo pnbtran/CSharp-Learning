@@ -15,8 +15,11 @@ public class Person
 }
 ```
 Trong đó: 
+
     - `public`: cho phép truy cập ở bất cứ đâu trong chương trình. 
+    
     - `string/ int`: kiểu dữ liệu của thuộc tính. 
+    
     - `{get; set;}: cú pháp "auto-property" - cho phép đọc (get) và gán (set) -> Khai báo thuộc tính chuẩn, gọn ràng. 
 
 ## Lưu ý 
