@@ -11,7 +11,7 @@
 - OOP = đóng gói + xử lí dữ liệu
 
 ## Thuật toán 
-### Không có Constructor
+
 - Class Rectangle với phương thức. 
 
 > Phương thức CalculateArea nằm bên trong class, nên nó dùng thẳng Width và Height của chính object - không cần truyền tham số. Object “biết” dữ liệu của mình.
@@ -39,7 +39,7 @@ static void Main(string[] args)
 }
 ``` 
 
-### Có hàm constructor
+### Vai trò hàm constructor
 - Khi không có hàm constructor -> chúng ta cần gán từng thuộc tính trong hàm `main`. Ví dụ như, đoạn code trên: 
 
 ```csharp 
