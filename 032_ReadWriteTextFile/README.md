@@ -1,4 +1,4 @@
-# 032 ĐỌC VÀ GHI FILE TẼT ĐƯƠN GIẢN 
+# 032 ĐỌC VÀ GHI FILE TEXT ĐƠN GIẢN 
 ## Tóm tắt
 - Lí do cần đọc/ ghi file và khi nào dùng
 
