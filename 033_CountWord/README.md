@@ -1,6 +1,6 @@
 # 033 ĐẾM SỐ TỪ FILE VĂN BẢN 
 ## Tóm tắt
-- Đọc toàn bộ nội dung file bằng `File.ReadAllTexxt()` và kiểm tra bằng `File.Exists()`
+- Đọc toàn bộ nội dung file bằng `File.ReadAllText()` và kiểm tra bằng `File.Exists()`
 
 - Tách chuỗi dài thành mảng bằng `Split()` với nhiều kí tự phân cách
 
@@ -8,9 +8,9 @@
 
 - Đếm số từ, số ký tự, số dòng trong file 
 
-- Bọc code bằng `try-catch` để xử lí file chuyên nghiệp 
+- Bọc code bằng `try-catch` để xử lí lỗi làm ngừng chương trình đột ngột. 
 
-- Dùng `Dictionary` để thống kê tần suất xuất hiện 
+- Dùng `Dictionary` để thống kê tần suất 1 từ xuất hiện 
 
 ## Lí thuyết
 - [1] Đọc nội dung từ file
@@ -18,7 +18,7 @@
 
 - [2] Xử lí chuỗi để tách từ 
     - `StringSplitOptions.RemoveEmptyEntries`: Khi văn bản có dấu cách liền nhau, hoặc dấu chấm theo sau là khoảng trắng (". "), `Slipt()` tạo những phần tử rỗng (""). 
-    > Tùy chọn này quét sạch các phần tử rỗng đó, để không đếm “từ ma”. Bỏ nó đi là số từ sẽ phình lên một cách bí ẩn!
+    > Tùy chọn này quét sạch các phần tử rỗng đó, để không đếm “từ ma”. Bỏ đi là số từ sẽ phình lên một cách bí ẩn!
 
     - *Ý nghĩa các kí tự* 
 
@@ -30,12 +30,12 @@
 | `'.'`, `','`, `';'`, `':'` | Dấu câu | Cuối câu, liệt kê | 
 | `'!'`, `'?'` | Dấu chấm than, dấu hỏi | Cuối câu | 
 
-- [3] Dếm số lượng từ 
+- [3] Đếm số lượng từ 
 
 - **Nhưng** nếu file rỗng hoặc file không có quyền truy cập thì cần xử lí như nào? 
     - Bọc toàn bộ code bằng `try-catch` và thêm phần kiểm tra File rỗng bằng `if` 
 
-    - Thứ tự `catch` cũng cần lưu ý: Các `catch` cụ thể (`UnauthorizedAccessException`, `IOException`) phải đứng trước `catch(Exception ex)` chung chung. Vì Exception là cha tất cả, nếu đặt nó lên đầu nó sẽ tóm tắt cả lỗi và catch cụ thể thể bên dưới không bao giờ được thực hiện. 
+    - Thứ tự `catch` cũng cần lưu ý: Các `catch` cụ thể (`UnauthorizedAccessException`, `IOException`) phải đứng trước `catch(Exception ex)` chung chung. Vì Exception là cha tất cả, nếu đặt nó lên đầu nó sẽ tóm tắt cả lỗi và `catch` cụ thể thể bên dưới không bao giờ được thực hiện. 
 
 ## Thuật toán 
 - Xây dựng chương trình hoàn chỉnh có menu tương tác 
@@ -44,7 +44,7 @@
 ## Tổng kết/ Lưu ý
 - Luôn `File.Exists()` trước khi đọc.
 
-- Bọc thao tác file trong `try-catch`, hạn chế lỗi.
+- Bọc thao tác file trong `try-catch`, hạn chế lỗi làm ngừng chương trình đột ngột.
 
 - Luôn dùng `StringSplitOptions.RemoveEmptyEntries` khi đếm từ - quét "từ ma".
 
@@ -56,7 +56,9 @@
 
 - Kiểm tra `string.IsNullOrWhiteSpace()` cho nội dung file - tránh xử lý file rỗng.
 
-- Mẹo nhớ: “Đọc - Cắt - Đếm” (Read - Split - Count). 
+- *Mẹo nhớ*:
+
+            “Đọc - Cắt - Đếm” (Read - Split - Count). 
             
             Ba bước, ba động từ. 
             
