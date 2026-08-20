@@ -177,7 +177,8 @@
 
 ## Lỗi "vô tri" đã phát giác
 ### Sai logic, đặt loạn vị trí 
-- **Code đang lỗi** 
+- **Code đang lỗi**
+  
         ```csharp
         List<Student> ListStudent = new List<Student>();
         CheckFile(filePath);
@@ -188,7 +189,8 @@
         string filePath = "students.json";
         ```
 
-- **Comliper**: `filePath` của tui đây bà??? 
+- **Comliper**: `filePath` của tui đây bà???
+  
         ```txt
         Main()
         ↓
@@ -200,7 +202,8 @@
         string filePath = "students.json"  ← tới đây mới khai báo
         ``` 
 
-- **Cách sửa lại** - đổi vị trí lại 
+- **Cách sửa lại** - đổi vị trí lại
+  
     ```csharp
     List<Student> ListStudent = new List<Student>();
     
