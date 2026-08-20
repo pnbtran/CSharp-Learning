@@ -1,4 +1,4 @@
-# XỬ LÍ FILE VÀ CHUỖI - TÌM, THAY THẾ VÀ CHIA TÁCH CHUỖI 
+# 034 XỬ LÍ FILE VÀ CHUỖI - TÌM, THAY THẾ VÀ CHIA TÁCH CHUỖI 
 
 ## Tóm tắt
 - Tìm chuỗi con với `Contains(), IndexOf(), LastIndexOf(), StartsWith(), EndsWith()`
