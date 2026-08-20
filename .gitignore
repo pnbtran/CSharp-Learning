@@ -2,12 +2,37 @@
 .vs/
 
 # Build output
-bin/
-obj/
+**/bin/
+**/obj/
 
-# User settings
+# NuGet packages
+**/packages/
+
+# UserUser-specific files
 *.user
 *.suo
+*.useosscache
+*.sln.docstates
 
 # VS Code
 .vscode/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Test/ coverage output/ test results 
+*.trx
+coverage/
+*.coverage
+*.coveragexml 
+
+# Logs/ temporary files
+*.log
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
