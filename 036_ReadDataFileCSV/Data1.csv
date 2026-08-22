@@ -1,0 +1,11 @@
+STT, Dai luong, Ki hieu, Don vi, Gia tri
+1, Chieu dai vach, Lw, mm, 8000
+2, Chieu day vach, tw, mm, 300
+3, Chieu cao vach, hw, mm, 3900
+4, Vung bien vach, Bl=Br, mm, 2000
+5, Chieu day be tong bao ve, a, mm, 30
+6, Cuong do chiu nen tinh toan be tong B30, Rb, MPa, 17
+7, Cuong do chiu keo tinh toan be tong B30, Rbt, MPa, 1.15
+8, Cuong do chiu nen tinh toan thep CB300V, Rs, MPa, 260
+9, Cuong do chiu keo tinh toan thep CB300V, Rsc, MPa, 260
+10, Modun dan hoi thep, Es, MPa, 200000 
